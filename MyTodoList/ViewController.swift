@@ -95,7 +95,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // +ボタン押下処理
     @IBAction func btAddTodo(_ sender: Any) {
         
-//        let addList = tfAddTodo.text
         
         // TFが空文字なら追加しない
         if tfAddTodo.text != "" {
@@ -105,6 +104,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return
         }
         
+        // キーボード非表示
         view.endEditing(true)
         
         // 追加し終わったらTableView再読み込み
